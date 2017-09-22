@@ -1,12 +1,9 @@
 import java.util.Scanner;
-public class Main {
-	public static Scanner key = new Scanner(System.in);
-	
-	
+public class Main {	
 	public static void main(String[] args)
 	{
-		System.out.print("suck it");
-		ShiftCipher.Menu();
+		Scanner key = new Scanner(System.in);
+		ShiftCipher.Menu(key);
 		String sentence="";
 		int x;
 		sentence = key.nextLine();
@@ -19,5 +16,6 @@ public class Main {
 		System.out.println("end" + x);
 		//Convert.CharCount(input.toCharArray(),true);	
 		System.out.println("example3");
+		key.close();
 	}
 }

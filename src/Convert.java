@@ -50,12 +50,12 @@ public class Convert {
 			}
 		return(values);
 	}
-	public static String InputString()
+	public static String InputString(Scanner key)
 	{
 		String word,sentence="",ptext;
 		System.out.print("please insert text: ");
-		Main.key.nextLine();
-		ptext = Main.key.nextLine();
+		key.nextLine();
+		ptext = key.nextLine();
 		Scanner words = new Scanner(ptext);	//creates scanner for string		
 		while (words.hasNext())
 		{
