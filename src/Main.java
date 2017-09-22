@@ -18,6 +18,6 @@ public class Main {
 		System.out.println(sentence);
 		System.out.println("end" + x);
 		//Convert.CharCount(input.toCharArray(),true);	
-		System.out.println("example2");
+		System.out.println("example3");
 	}
 }
