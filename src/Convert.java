@@ -1,4 +1,4 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Convert {
 	private static char[] alpl =("abcdefghijklmnopqrstuvwxyz").toCharArray();
