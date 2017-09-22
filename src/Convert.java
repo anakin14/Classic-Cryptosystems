@@ -52,11 +52,10 @@ public class Convert {
 	}
 	public static String InputString()
 	{
-		Scanner key1 = new Scanner(System.in);
 		String word,sentence="",ptext;
 		System.out.print("please insert text: ");
-		ptext = key1.nextLine();
-		key1.close();
+		Main.key.nextLine();
+		ptext = Main.key.nextLine();
 		Scanner words = new Scanner(ptext);	//creates scanner for string		
 		while (words.hasNext())
 		{

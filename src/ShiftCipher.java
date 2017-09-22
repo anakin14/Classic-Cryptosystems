@@ -1,10 +1,7 @@
-import java.util.Scanner;
-
 public class ShiftCipher {
 	public static void Menu()
 	{
 		int input = 0;
-		Scanner key = new Scanner(System.in);
 		while (input != -1)
 		{
 			System.out.println("Welcome to Shift Cipher Master");
@@ -13,7 +10,7 @@ public class ShiftCipher {
 			System.out.println("3. Decrypte encrypted text (W/O key)");
 			System.out.println("-1. To exit program");
 			System.out.print("Please select option in menu: ");
-			input = key.nextInt();
+			input = Main.key.nextInt();
 			if (input == 1)
 				ShiftCipher.EncrypteShiftCipher();
 			else if (input == 2)
@@ -25,7 +22,6 @@ public class ShiftCipher {
 			else
 				System.out.print("Shuting Down");
 		}
-		key.close();
 		
 	}
 	public static char[] Shift (char[] nxt, int k)//adds to the values of each char
@@ -44,10 +40,8 @@ public class ShiftCipher {
 		char[] nxt = null;
 		
 		sentence = Convert.InputString();
-		Scanner key = new Scanner(System.in);
 		System.out.print("please enter the key value: ");
-		k = key.nextInt();//inputs k value to be encrypted
-		key.close();
+		k = Main.key.nextInt();//inputs k value to be encrypted
 		
 		nxt = sentence.toCharArray(); //Separates string to array of char
 		nxt = Shift(nxt, k);
@@ -60,14 +54,12 @@ public class ShiftCipher {
 		int k;
 		char[]nxt = null;
 		sentence = Convert.InputString();
-		Scanner key = new Scanner(System.in);
 		System.out.print("please enter the key value: ");
-		k = key.nextInt();	//inputs k value to be encrypted
-		key.close();
+		k = Main.key.nextInt();	//inputs k value to be encrypted
 		
 		nxt = sentence.toCharArray(); //Separates string to array of char
-		nxt = Shift(nxt, -k);
-		System.out.print(nxt.toString());
+		nxt = Shift(nxt, 26-k);
+		System.out.println(nxt);
 	}
 	public static void DecrypteShiftCipher()
 	{
@@ -86,11 +78,9 @@ public class ShiftCipher {
 			//for (x=0; x<=nxtt.length -1; x++)
 			//System.out.println(x + " " +nxtt[x]);
 		}
-		Scanner key = new Scanner(System.in);
 		System.out.println("please review output and\nenter the correct key value: ");
-		k = key.nextInt(); //inputs k value to be encrypted
+		k = Main.key.nextInt(); //inputs k value to be encrypted
 		nxtt = Shift(nxt,(k*-1));
-		key.close();
 		System.out.print("key is: " + k + "\nDecrypted text is: ");
 		System.out.println(nxtt);
 		System.out.print("Incrypted text is: ");
