@@ -17,6 +17,6 @@ public class Main {
 		System.out.println(sentence);
 		System.out.println("end" + x);
 		//Convert.CharCount(input.toCharArray(),true);	
-		
+		System.out.println("example");
 	}
 }
