@@ -20,7 +20,7 @@ public class Main {
 		System.out.println(sentence);
 		System.out.println("end" + x);
 		key.close();
-		//Convert.CharCount(input.toCharArray(),true);	
+		Convert.CharCount(input.toCharArray(),true);	
 		key.close();
 	}
 }
