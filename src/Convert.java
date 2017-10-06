@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Convert {
 	private static char[] alpl =("abcdefghijklmnopqrstuvwxyz").toCharArray();
 	public static char[] alpu =("ABCDEFGHIJKLMNOPQRSTUVWXYZ").toCharArray();
-	public static 
 	public static char[] IntChar (int[] values)//converts char array into int array
 	{										   //based on alphabetical value a=0 b=1....ext
 		int y= values.length, x;

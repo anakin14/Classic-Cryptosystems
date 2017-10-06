@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ShiftCipher {
 	public static void Menu(Scanner key)
 	{
-		int input = 0;
+		/*int input = 0;
 		while (input != -1)
 		{
 			System.out.println("Welcome to Shift Cipher Master");
@@ -23,7 +23,7 @@ public class ShiftCipher {
 			else
 				System.out.print("Shuting Down");
 		}
-		
+		*/
 	}
 	public static char[] Shift (char[] nxt, int k)//adds to the values of each char
 	{
