@@ -60,9 +60,4 @@ public class Counter {
 		}
 		return(values);		
 	}
-	public static String[] SymbolCounter (String input)
-	{
-		ArrayList<int> values = new ArrayList();
-		return()
-	}
 }

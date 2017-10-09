@@ -1,14 +1,14 @@
 import java.util.Scanner;
 public class ShiftCipher {
-	public static void Menu(Scanner key)
+	/*public static void Menu(Scanner key)
 	{
-		/*int input = 0;
+		int input = 0;
 		while (input != -1)
 		{
 			System.out.println("Welcome to Shift Cipher Master");
-			System.out.println("1. Encrypte Plain text (Shift Cipher)");
-			System.out.println("2. Decrypte encrypted text (With key)");
-			System.out.println("3. Decrypte encrypted text (W/O key)");
+			System.out.println("1. Encrypt Plain text (Shift Cipher)");
+			System.out.println("2. Decrypt encrypted text (With key)");
+			System.out.println("3. Decrypt encrypted text (W/O key)");
 			System.out.println("-1. To exit program");
 			System.out.print("Please select option in menu: ");
 			input = key.nextInt();
@@ -21,10 +21,10 @@ public class ShiftCipher {
 			else if (input != -1)
 				System.out.print("Invalid Input");
 			else
-				System.out.print("Shuting Down");
+				System.out.print("Shutting Down");
 		}
-		*/
-	}
+		
+	}*/
 	public static char[] Shift (char[] nxt, int k)//adds to the values of each char
 	{
 		int[] values = Convert.CharInt (nxt);
@@ -79,7 +79,7 @@ public class ShiftCipher {
 			//for (x=0; x<=nxtt.length -1; x++)
 			//System.out.println(x + " " +nxtt[x]);
 		}
-		System.out.println("please review output and\nenter the correct key value: ");
+		System.out.print("please review output and\nenter the correct key value: ");
 		k = key.nextInt(); //inputs k value to be encrypted
 		nxtt = Shift(nxt,(k*-1));
 		System.out.print("key is: " + k + "\nDecrypted text is: ");
